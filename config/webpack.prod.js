@@ -1,3 +1,11 @@
+/*
+ * @文件描述: webpack生产模式
+ * @公司: cloudwise
+ * @作者: janko
+ * @Date: 2021-09-14 15:53:53
+ * @LastEditors: janko
+ * @LastEditTime: 2021-11-04 09:28:08
+ */
 const { merge } = require("webpack-merge");
 const TerserPlugin = require("terser-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");

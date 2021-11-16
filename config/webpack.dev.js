@@ -1,3 +1,11 @@
+/*
+ * @文件描述: webpack开发模式
+ * @公司: cloudwise
+ * @作者: janko
+ * @Date: 2021-09-14 15:53:42
+ * @LastEditors: janko
+ * @LastEditTime: 2021-11-03 14:50:26
+ */
 const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 // 热更新 react 组件
@@ -10,15 +18,15 @@ module.exports = merge(common, {
   mode: "development",
   // 开发工具，开启 source map，编译调试
   devtool: "inline-source-map",
-  // 输出
-  output: {
-    // bundle 文件名称
-    filename: "[name].bundle.js",
-    // bundle 文件路径
-    path: resolveApp("dist"),
-    // 编译前清除目录
-    clean: true,
-  },
+  // 输出(不是必须)
+  // output: {
+  //   // bundle 文件名称
+  //   filename: "[name].bundle.js",
+  //   // bundle 文件路径
+  //   path: resolveApp("dist"),
+  //   // 编译前清除目录
+  //   clean: true,
+  // },
   devServer: {
     // 告诉服务器从哪里提供内容，只有在你想要提供静态文件时才需要。
     static: {
